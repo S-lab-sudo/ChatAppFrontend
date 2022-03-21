@@ -1,0 +1,114 @@
+
+.chatWindowHolder{
+    display: grid;
+    background: #00000090;
+    padding: 1em;
+    border-radius: 10px;
+    width: 95%;
+    height: 80%;
+    backdrop-filter: blur(2px);
+    grid-template-columns: 3fr 0.1fr 10fr;
+}
+
+
+.searchChatName>input{
+    background: #ffffff30;
+    font-size: 1.2em;
+    padding: 0.4em;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 0.2em;
+}
+.chatImg>img{
+    width: 100%;
+}
+
+.singleChatHolder{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0.4em;
+    margin-top: 0.8em;
+    background: #ffffff40;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.singleChatHolder:hover{
+    background: #ffffff90;
+    color: #000;
+}
+
+.chatNameMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.chatsHolder{
+    margin-top: 2em;
+}
+
+
+
+.rightBoxContainer{
+    display: grid;
+    grid-template-rows: 1fr 11fr;
+    width: 95%;
+    height: 90%;
+}
+
+.chatButtons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.messageWindow{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.chatButtons img{
+    filter: invert(1);
+    width: 100%;
+    cursor: pointer;
+}
+.chatButtons div{
+    margin-left: 1em;
+    width: 5%;
+}
+
+.messageInput>input{
+    background-color: #ffffff30;
+    color: #fff;
+    width: 90%;
+    box-shadow: 0 0 5px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+    padding: 0.1em 0.5em;
+    border-radius: 3em;
+}
+
+.messageInput{
+    flex-basis: 90%;   
+}
+
+.messages{
+    flex-basis: 95%;
+}
+
+.sendButton{
+    width: 5%;
+}
+.sendButton>img{
+    width: 100%;
+    filter: invert(1);
+    filter: blur(5);
+}
+.newMessage{
+    display: flex;
+}

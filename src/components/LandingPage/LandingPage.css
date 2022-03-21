@@ -1,0 +1,200 @@
+.main {
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.landingPageHolder {
+    padding: 1.5em;
+    background: #c4c4c440;
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    grid-template-rows: 11fr 1fr 11fr;
+}
+
+
+/* LEFT CSS */
+.leftBox {
+    padding: 1.5em;
+}
+
+/* USER ICON */
+.userIcon {
+    width: 7em;
+    margin: 1em;
+}
+
+.userIcon>img {
+    width: 100%;
+}
+
+/* LOGIN CONTAINER */
+.loginContainer {
+    width: 100%;
+    background: #00000050;
+    padding: 1.5em;
+    border-radius: 0.5em;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.loginInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.emailInput,
+.emailInput>input,
+.passwordInput,
+.passwordInput>input {
+    width: 100%;
+    display: flex;
+}
+
+.userLoginInputs {
+    margin-top: 1em;
+    padding: 0.6em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    background: #ffffff40;
+    color: #fff;
+    border-radius: 0.2em;
+}
+
+/* REMEMBER ME */
+.rememberMe {
+    margin-top: 1em;
+}
+
+/* LOGIN BUTTON */
+.loginButton>button {
+    padding: 0.4em;
+    background: rgba(130, 232, 114, 0.45);
+    margin-top: 1em;
+    font-size: 1.35em;
+    color: #fff;
+    width: 80%;
+    border-radius: 5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.loginButton>button:hover {
+    background: rgba(130, 232, 114, 0.65);
+    color: #000;
+    box-shadow: 1px 1px 20px rgba(130, 232, 114, 0.85);
+}
+
+.loginButton>button:active {
+    color: #000;
+    transform: translateY(2px);
+    width: 75%;
+}
+
+
+/* MIDDLE LINE */
+.middleLine {
+    width: 1px;
+    border-left: 2px solid #000;
+    margin: 0 1em;
+}
+
+.middleLineW{
+    width: 1px;
+    border-left: 2px solid #FFF;
+    margin: 0 1em;
+}
+
+
+
+/* RIGHT LINE */
+.rightBox {
+    background: #00000050;
+    padding: 1.5em;
+    border-radius: 0.5em;
+}
+
+.rightBox>h3 {
+    text-align: center;
+}
+
+.signupInputName {
+    margin-top: 1em;
+    padding: 0.6em;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    background: #ffffff40;
+    color: #fff;
+    border-radius: 0.2em;
+}
+
+.firstName>input,
+.signupPassword {
+    float: left;
+    margin-right: 0.2em;
+}
+
+.userFullName {
+    display: flex;
+}
+
+.signupEmail>input {
+    width: 70%;
+}
+
+.registerButton>button {
+    padding: 0.4em;
+    background: rgb(74 173 255 / 45%);
+    margin-top: 1em;
+    font-size: 1.35em;
+    color: #fff;
+    width: 80%;
+    border-radius: 5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.registerButton>button:hover {
+    background: rgb(74 173 255 / 45%);
+    color: #000;
+    box-shadow: 1px 1px 20px rgb(74 173 255 / 45%);
+}
+
+.registerButton>button:active {
+    color: #000;
+    transform: translateY(2px);
+    width: 75%;
+}
+
+.solved {
+    color: black;
+    animation: animate 2s forwards;
+}
+
+@keyframes animate {
+    0% {
+        display: block;
+        font-size: medium;
+    }
+
+    100% {
+        display: none;
+        font-size: 0;
+    }
+}
+
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 1000px #1b1b1b inset !important;
+  -webkit-text-fill-color: white !important;
+}
